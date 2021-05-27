@@ -1,12 +1,12 @@
 import db from '../db/connection.js'
-import Post from '../models/post.js'
+import Bike from '../models/bike.js'
 
 
 const insertData = async () => {
   // reset database
   await db.dropDatabase()
 
-  const posts =
+  const bikes =
     [
       {
         "brand": "abstract art #1",
@@ -28,8 +28,8 @@ const insertData = async () => {
       }
     ]
 
-  await Post.insertMany(posts)
-  console.log("Created posts!")
+  await Bike.insertMany(bikes)
+  console.log("Created bikes!")
 
   // close database connection. done.
   db.close()
