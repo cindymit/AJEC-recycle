@@ -1,5 +1,3 @@
-# AJEC-recycle
-
 # Project Overview
 
 ## Project Name
@@ -24,20 +22,51 @@ The purpose of this web application is to allow users the ability to resale and 
 
 ## Schema
 
+Bike Schema
+
 ```
+const Bike = new Schema(
+  {
+    brand: { type: String, required: true },
+    imgURL: { type: String, required: true },
+    category: { type: String, required: true },
+    condition: { type: String, required: true },
+    price: { type: String, required: true },
+    sellerName: { type: String, required: true },
+    sellerEmail: { type: String, required: true }
+  },
+)
+```
+
+User schema
+
+```
+const User = new Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+    },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
 ```
 
 ### MVP/PostMVP
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+- Full CRUD
+- Sign-Up
+- Login
+- Users post used bikes
+- Potential Buyers should be able to add bikes to Favorites
+- Filter & Search Functionality
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- Shopping cart for Instant Purchase
+- Only User’s have the ability to view seller contact information when they click on image for bike details
+- Click on User’s Profile to display all of their bike postings
+- Location filter
+- Image carousel
+- User favorites
