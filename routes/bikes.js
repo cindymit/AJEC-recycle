@@ -5,8 +5,6 @@ import * as controllers from '../controllers/bikes.js'
 const router = Router()
 
 
-router.get('/', (req, res) => res.send("This is root!"))
-
 router.get('/bikes', controllers.getBikes)
 router.get('/bikes/:id', controllers.getBike)
 router.post('/bikes', controllers.createBike)
