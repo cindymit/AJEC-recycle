@@ -1,5 +1,5 @@
 import db from './db/connection.js'
-import routes from './routes/bikes.js'
+import routes from './routes/index.js'
 
 import express from 'express'
 import logger from 'morgan'
