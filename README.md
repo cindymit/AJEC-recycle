@@ -6,7 +6,7 @@ Re-Cycle
 
 ## Project Description
 
-The purpose of this web application is to allow users the ability to resale and purchase used bikes. New guests to the site will have the ability to view bike inventory and limited access to bike details. Once guests create a user profile, they will be able to view full bike details, which includes seller's username and email address. In addition, users have the ability to post bikes for resale with the option to edit and delete the post as needed.
+The purpose of this web application is to allow users the ability to resale and purchase used bikes. New guests to the site will have the ability to view bike inventory and limited access to bike details. Once guests create a user profile, they will be able to view full bike details, which includes the seller's username and email address. In addition, users have the ability to post bikes for resale with the option to edit and delete the post as needed.
 
 ## Team Expectations
 
