@@ -1,27 +1,26 @@
-import db from './db/connection.js'
-import routes from './routes/index.js'
+import db from "./db/connection.js";
+import routes from "./routes/index.js";
 
-import express from 'express'
-import logger from 'morgan'
-import cors from 'cors'
+import express from "express";
+import logger from "morgan";
+import cors from "cors";
 
-const app = express()
-const PORT = process.env.PORT || 3001
+const app = express();
+const PORT = process.env.PORT || 3001;
 
+app.use(express.json());
+app.use(cors());
+app.use(logger("dev"));
 
-app.use(express.json())
-app.use(cors())
-app.use(logger('dev'))
+app.use("/api", routes);
 
-app.use('/api', routes)
-
-db.on('connected', () => {
-  console.log('Connected to MongoDB!')
+db.on("connected", () => {
+  console.log("Connected to MongoDB!");
   app.listen(PORT, () =>
-  process.env.NODE_ENV === 'production'
-  ? console.log(`Express server running in production on port ${PORT}\n\n`) 
-    : console.log(`Express server running in development on: http://localhost:${PORT}`))
-})
-
-
-
+    process.env.NODE_ENV === "production"
+      ? console.log(`Express server running in production on port ${PORT}\n\n`)
+      : console.log(
+          `Express server running in development on: http://localhost:${PORT}`
+        )
+  );
+});
