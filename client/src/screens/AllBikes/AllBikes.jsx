@@ -1,13 +1,26 @@
-import React from 'react';
+import { getBikes } from "../../services/bikes.js";
+import { useEffect, useState } from "react";
+import Bikes from "../../components/Bikes/Bikes";
 import Layout from "../../components/Layout/Layout";
 
 const AllBikes = () => {
+  const [bikes, setBikes] = useState("");
+
+  useEffect(() => {
+    const fetchBikes = async () => {
+      const allBikes = await getBikes();
+      setBikes(allBikes);
+      console.log(allBikes);
+    };
+    fetchBikes();
+  }, []);
+
   return (
-  <Layout>
     <div>
-      <h3>hello!</h3>
+      <Layout>
+        <Bikes bikes={bikes} />
+      </Layout>
     </div>
-    </Layout>
   );
 };
 

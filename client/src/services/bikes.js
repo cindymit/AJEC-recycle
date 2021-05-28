@@ -3,11 +3,14 @@ import api from "./apiConfig";
 export const getBikes = async () => {
   try {
     const response = await api.get("/bikes");
+    console.log(response.data);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
+
+getBikes();
 
 export const getBike = async (id) => {
   try {
