@@ -1,7 +1,10 @@
+
 import { getBikes } from "../../services/bikes.js";
 import { useEffect, useState } from "react";
 import Bikes from "../../components/Bikes/Bikes";
+
 import Layout from "../../components/Layout/Layout";
+
 
 const AllBikes = () => {
   const [bikes, setBikes] = useState("");
