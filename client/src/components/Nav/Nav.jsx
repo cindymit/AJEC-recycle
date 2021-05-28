@@ -13,10 +13,10 @@ const Nav = () => {
           </NavLink>
         </div>
           <div className="links">
-            <NavLink className="shop-link" to="/bikes">
+            <NavLink className="shop-link" to="/all-bikes">
               Shop
             </NavLink>
-            <NavLink className="create-link" to="/createbike">
+            <NavLink className="sell-link" to="/create-bike">
               Sell
             </NavLink>
           </div>
