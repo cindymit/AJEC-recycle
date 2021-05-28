@@ -1,19 +1,29 @@
-import React from "react";
-import Layout from "../../components/Layout/Layout";
+
+import { getBikes } from "../../services/bikes.js";
+import { useEffect, useState } from "react";
 import Bikes from "../../components/Bikes/Bikes";
 
-const AllBikes = (props) => {
-  //bikes, setBikes
-  //useEffect that reaches into services folder and calls getBikes
+import Layout from "../../components/Layout/Layout";
+
+
+const AllBikes = () => {
+  const [bikes, setBikes] = useState("");
+
+  useEffect(() => {
+    const fetchBikes = async () => {
+      const allBikes = await getBikes();
+      setBikes(allBikes);
+      console.log(allBikes);
+    };
+    fetchBikes();
+  }, []);
 
   return (
-    <Layout>
-      <div>
-      {bikes.map((bike) => (
-          <Bikes bike={bike} />
-        ))}
-      </div>
-    </Layout>
+    <div>
+      <Layout>
+        <Bikes bikes={bikes} />
+      </Layout>
+    </div>
   );
 };
 

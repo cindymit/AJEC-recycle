@@ -1,20 +1,19 @@
-import React from 'react';
-import Layout from "../Layout/Layout";
-import { Link } from 'react-router-dom'
+
+import React from "react";
 
 const Bikes = (props) => {
   return (
-    <Layout>
-      <div>
-        <Link className="bike" to={`/bikes/${props._id}`}>
-          <div className="brand">{props.brand}</div>
-          <img className="bike-image" src={props.imgURL} alt={props.name} />
-          <div className="category">{props.category}</div>
-          <div className="condition">{props.condition}</div>
-          <div className="condition">{`$${props.price}`}</div>
-        </Link>
-      </div>
-    </Layout>
+    <div>
+      {props.bikes.map((bike) => {
+        return (
+          <div>
+            <h3>{bike.brand}</h3>
+            <img src={bike.imgUrl}></img>
+            <h5>{bike.brand}</h5>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

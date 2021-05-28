@@ -7,8 +7,8 @@ const getToken = () => {
 const api = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://ajec-recycle.herokuapp.com/api/bikes"
-      : "http://localhost:3001/api/bikes",
+      ? "https://ajec-recycle.herokuapp.com/api"
+      : "http://localhost:3001/api",
 });
 api.interceptors.request.use(
   async function (config) {
