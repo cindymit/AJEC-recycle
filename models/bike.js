@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
-const Post = new Schema(
+const Bike = new Schema(
   {
     brand: { type: String, required: true },
     imgURL: { type: String, required: true },
@@ -14,4 +14,4 @@ const Post = new Schema(
   { timestamps: true }
 )
 
-export default mongoose.model('posts', Post)
+export default mongoose.model('bikes', Bike)
