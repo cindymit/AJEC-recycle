@@ -1,3 +1,5 @@
 .footer-div {
-  border: 1px solid red;
+  text-align: center;
+  margin: 75px 0px 0px 0px;
+  font-size: 20px;
 }
