@@ -81,7 +81,7 @@ const CreateBike = () => {
             required
             onChange={handleChange}
           />
-          <textarea
+          <input
             className="input-name"
             placeholder="Name"
             value={bike.sellerName}
@@ -89,7 +89,7 @@ const CreateBike = () => {
             required
             onChange={handleChange}
           />
-          <textarea
+          <input
             className="input-email"
             placeholder="Email"
             value={bike.sellerEmail}
