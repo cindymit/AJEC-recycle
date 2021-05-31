@@ -47,6 +47,7 @@ fetchBike()
   }
 
   return (
+    
     <Layout user={props.user}>
       <div className='bike-edit'>
         <div className='image-container'>

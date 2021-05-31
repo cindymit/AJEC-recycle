@@ -1,0 +1,59 @@
+.sign-up-banner{
+  height: 300px;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.form-container{
+  background-color: #fff;
+    padding: 30px 20px;
+    margin-top: -180px;
+    box-shadow: 0 28px 32px 0 rgb(12 0 51 / 10%);
+    max-width: 496px;
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.edit-header{
+  text-transform: uppercase;
+  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  margin-bottom: 32px;
+  font-size: 30px;
+}
+
+.edit-form{
+  margin-bottom: 0;
+}
+
+.footer-div{
+  position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+}
+
+input{
+  width: 23rem;
+    padding: 11px;
+    margin: 7px;
+    font-size: 20px;
+}
+button{
+  background-color: #00c160;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+}

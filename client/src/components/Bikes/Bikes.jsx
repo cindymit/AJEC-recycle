@@ -14,7 +14,6 @@ const Bikes = (props) => {
           <h5>Seller: {bike.sellerName}</h5>
           <h5>Contact Info: {bike.sellerEmail}</h5>
         </div>
-      </div>
     );
   });
   return <div>{allTheBikes}</div>;
