@@ -1,7 +1,6 @@
-import React from 'react';
 import { useState, useEffect } from 'react'
 import './BikeDetails.css'
-import Layout  from '../../components/Layout/Layout'
+import  Layout  from '../../components/Layout/Layout'
 import { getBike, deleteBike } from '../../services/bikes'
 import { useParams, Link } from 'react-router-dom'
 
