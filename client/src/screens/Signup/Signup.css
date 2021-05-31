@@ -11,12 +11,13 @@
     padding: 30px 20px;
     margin-top: -180px;
     box-shadow: 0 28px 32px 0 rgb(12 0 51 / 10%);
-    margin: -180px 20px 45px 20px;
     max-width: 496px;
     text-align: center;
     position: absolute;
-    left: 17%;
-    top: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .edit-header{
