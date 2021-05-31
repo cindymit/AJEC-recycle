@@ -2,6 +2,7 @@ import { getBikes } from "../../services/bikes";
 import { useEffect, useState } from "react";
 import Bikes from "../../components/Bikes/Bikes";
 import Layout from "../../components/Layout/Layout";
+import "./AllBikes.css";
 
 const AllBikes = () => {
   const [bikes, setBikes] = useState([]);

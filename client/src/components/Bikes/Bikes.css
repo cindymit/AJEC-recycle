@@ -1,0 +1,15 @@
+body {
+  /* background-color: red; */
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+
+.bike-post {
+  background-color: purple;
+  border: 1px solid black;
+  text-align: center;
+}

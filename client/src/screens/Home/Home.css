@@ -1,5 +1,10 @@
 .home-div {
   text-align: center;
+  
+}
+
+img {
+  border-bottom:  2px solid black;
 }
 
 .prompts {
@@ -44,18 +49,27 @@
   left: 20%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: lightgrey;
+  background-color: transparent;
   color: black;
   font-size: 30px;
   padding: 35px 35px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid black;
+  border: 2px solid black;
   font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
 }
 
 .button-container .btn:hover {
   background-color: white;
   color: black;
+}
+
+.home-icons {
+  margin-top: 20px;
+}
+
+.home-icons img {
+  margin: 20px 55px 0px 55px;
 }

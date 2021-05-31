@@ -40,6 +40,7 @@ const CreateBike = () => {
   return (
     <Layout>
       <div className="form-div">
+        <h1>Create your bike post here!</h1>
         <form className="create-form" onSubmit={handleSubmit}>
           <input
             className="input-brand"
