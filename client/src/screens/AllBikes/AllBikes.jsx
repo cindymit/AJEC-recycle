@@ -18,7 +18,9 @@ const AllBikes = () => {
   return (
     <div>
       <Layout>
+        {bikes.map((bike) => (
         <Bikes bikes={bikes} />
+      ))}
       </Layout>
     </div>
   );

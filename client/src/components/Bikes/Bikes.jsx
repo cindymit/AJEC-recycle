@@ -5,7 +5,7 @@ const Bikes = (props) => {
     return (
       <div>
         <h3>{bike.brand}</h3>
-        <img src={bike.imgURL} />
+        <img src={bike.imgURL} alt="bike_image" />
         <h5>{bike.brand}</h5>
       </div>
     );
