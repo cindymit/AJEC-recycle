@@ -12,6 +12,7 @@ const SignUp = (props) => {
     email: '',
     password: '',
     passwordConfirmation: '',
+    zip_code: '',
     isError: false,
     errorMsg: '',
   })
@@ -34,6 +35,7 @@ const SignUp = (props) => {
       setForm({
         username: '',
         email: '',
+        zip_code: '',
         password: '',
         passwordConfirmation: '',
         isError: true,
@@ -55,7 +57,7 @@ const SignUp = (props) => {
     }
   }
 
-  const { username, email, password, passwordConfirmation } = form
+  const { username, email, zip_code, password, passwordConfirmation } = form
 
   return (
     <Layout className='edit-screen'>
@@ -79,6 +81,14 @@ const SignUp = (props) => {
           name='email'
           value={email}
           placeholder='Email'
+          onChange={handleChange}
+          />
+           <input
+          required
+          type='zip_code'
+          name='zip_code'
+          value={zip_code}
+          placeholder='Zip Code'
           onChange={handleChange}
         />
        
