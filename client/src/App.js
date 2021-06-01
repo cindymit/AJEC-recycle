@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import AllBikes from "./screens/AllBikes/AllBikes";
 import BikeDetails from "./screens/BikeDetails/BikeDetails";
 import BikeEdit from "./screens/BikeEdit/BikeEdit";
@@ -6,21 +7,49 @@ import Home from "./screens/Home/Home";
 import Login from "./screens/Login/Login";
 import Logout from "./screens/Logout/Logout";
 import SignUp from "./screens/SignUp/SignUp";
-import { Route, Switch } from "react-router-dom";
+import { verifyUser } from "./services/users";
+import { Route, Switch, Redirect } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser();
+      user ? setUser(user) : setUser(null);
+    };
+    fetchUser();
+  }, []);
+
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/all-bikes" component={AllBikes} />
-        <Route path="/create-bike" component={CreateBike} />
-        <Route exact path="/bikes/:id" component={BikeDetails} />
-        <Route path="/bikes/:id/edit" component={BikeEdit} />
-        <Route path="/log-in" component={Login} />
-        <Route path="/log-out" component={Logout} />
-        <Route path="/sign-up" component={SignUp} />
+        <Route exact path="/">
+          <Home user={user} />
+        </Route>
+        <Route path="/sign-up">
+          <SignUp setUser={setUser} />
+        </Route>
+        <Route path="/log-in">
+          <Login setUser={setUser} />
+        </Route>
+        <Route path="/log-out" component={Logout}>
+          <Logout setUser={setUser} />
+        </Route>
+        <Route exact path="/all-bikes" component={AllBikes}>
+          <AllBikes user={user} />
+        </Route>
+        <Route path="/create-bike" component={CreateBike}>
+          {user ? <CreateBike user={user} /> : <Redirect to="/sign-up" />}
+        </Route>
+        <Route exact path="/bikes/:id" >
+          <BikeDetails user={user} />
+        </Route>
+        <Route path="/bikes/:id/edit" component={BikeEdit}>
+          {user ? <BikeEdit user={user} /> : <Redirect to='/' />}
+        </Route>
       </Switch>
     </div>
   );
