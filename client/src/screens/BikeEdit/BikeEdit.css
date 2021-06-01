@@ -17,6 +17,7 @@
   width: 600px;
   padding: 0 40px;
   padding-bottom: 5px;
+  border-bottom: none;
 }
 
 .edit-input-image-link {

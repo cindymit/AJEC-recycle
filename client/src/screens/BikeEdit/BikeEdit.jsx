@@ -111,14 +111,6 @@ const BikeEdit = (props) => {
             <option value="Poor">Poor</option>
           </select>
           
-          {/* <input
-            className="edit-condition"
-            placeholder="Condition"
-            value={bike.condition}
-            name="condition"
-            required
-            onChange={handleChange}
-          /> */}
           <input
             className="edit-sellerName"
             placeholder="Seller Name"
