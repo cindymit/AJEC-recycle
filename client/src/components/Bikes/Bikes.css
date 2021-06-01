@@ -1,28 +1,32 @@
-.bike-container {
-  display: inline-block;
+.allbikesdiv {
   display: flex;
   justify-content: center;
-  margin: 10px;
-  font-family: "Montserrat", sans-serif;
-  border: 1px solid lightgrey;
-  box-shadow: 0 0 3px 1px #cecece;
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: red;
+  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
 }
 
 .bike-post {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
-  height: 600px;
-  background-color: blue;
+  width: 350px;
+  height: 475px;
+  line-height: 0em;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 3px 1px #cecece;
 }
 
 .bike-post img {
-  width: 60%;
-  height: 50%;
+  width: 95%;
+  height: 55%;
   border-bottom: none;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.bike-link {
+  text-decoration: none;
+  color: black;
 }

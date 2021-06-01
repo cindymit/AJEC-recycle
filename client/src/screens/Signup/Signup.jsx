@@ -1,61 +1,81 @@
-import { useState } from 'react'
-import './SignUp.css'
-import { signUp } from '../../services/users'
-import { useHistory } from 'react-router-dom'
-import Layout from '../../components/Layout/Layout'
+import { useState } from "react";
+import "./SignUp.css";
+import { signUp } from "../../services/users";
+import { useHistory } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 
 const SignUp = (props) => {
-  const history = useHistory()
-  
+  const history = useHistory();
+
   const [form, setForm] = useState({
+
     username: '',
     email: '',
     password: '',
     passwordConfirmation: '',
     zip_code: '',
+
     isError: false,
-    errorMsg: '',
-  })
+    errorMsg: "",
+  });
 
   const handleChange = (event) =>
-  setForm({
-    ...form,
-    [event.target.name]: event.target.value,
-  })
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
 
   const onSignUp = async (event) => {
-    event.preventDefault()
-    const { setUser } = props
+    event.preventDefault();
+    const { setUser } = props;
     try {
-      const user = await signUp(form)
-      setUser(user)
-      history.push('/')
+      const user = await signUp(form);
+      setUser(user);
+      history.push("/");
     } catch (error) {
-      console.error(error)
+      console.error(error);
       setForm({
+
         username: '',
         email: '',
         zip_code: '',
         password: '',
         passwordConfirmation: '',
+
         isError: true,
-        errorMsg: 'Sign Up Details Invalid',
-      })
+        errorMsg: "Sign Up Details Invalid",
+      });
     }
-  }
+  };
 
   const renderError = () => {
-    const toggleForm = form.isError ? 'danger' : ''
+    const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type='submit' className={toggleForm}>
+        <button type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
-      )
+      );
     } else {
-      return <button type='submit'>Sign Up</button>
+      return <button type="submit">Sign Up</button>;
     }
-  }
+  };
+
+
+  const { username, email, password, passwordConfirmation } = form;
+
+  return (
+    <Layout className="edit-screen">
+      <div className="signup-container">
+      <div
+        className="sign-up-banner"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/reserve/2jEqzi01Ru2HBhGLTBgB_MG_5236.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)",
+        }}
+      >
+      </div>
+
 
   const { username, email, zip_code, password, passwordConfirmation } = form
 
@@ -108,13 +128,12 @@ const SignUp = (props) => {
           type='password'
           placeholder='Confirm Password'
           onChange={handleChange}
+
           />
-          <div>
-        {renderError()} 
+          <div>{renderError()}</div>
+        </form>
         </div>
-          
-      </form>
-    </div>
+        </div>
     </Layout>
   );
 };

@@ -1,3 +1,7 @@
+.signup-container {
+  height: 81.5vh;
+}
+
 .sign-up-banner{
   height: 300px;
     background-size: cover;
@@ -29,16 +33,6 @@
 
 .edit-form{
   margin-bottom: 0;
-}
-
-.footer-div{
-  position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    bottom: 0;
 }
 
 input{

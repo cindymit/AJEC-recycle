@@ -32,6 +32,7 @@ const AllBikes = () => {
       console.log(allBikes);
     };
     fetchBikes();
+
   }, []);
 
 

@@ -26,6 +26,8 @@ function App() {
   return (
     <div className="App">
       <Switch>
+
+       
         <Route exact path="/">
           <Home user={user} />
         </Route>
@@ -50,6 +52,7 @@ function App() {
         <Route path="/bikes/:id/edit" component={BikeEdit}>
           {user ? <BikeEdit user={user} /> : <Redirect to='/' />}
         </Route>
+
       </Switch>
     </div>
   );
