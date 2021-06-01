@@ -61,26 +61,11 @@ const SignUp = (props) => {
     }
   };
 
-
-  const { username, email, password, passwordConfirmation } = form;
-
-  return (
-    <Layout className="edit-screen">
-      <div className="signup-container">
-      <div
-        className="sign-up-banner"
-        style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/reserve/2jEqzi01Ru2HBhGLTBgB_MG_5236.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)",
-        }}
-      >
-      </div>
-
-
   const { username, email, zip_code, password, passwordConfirmation } = form
 
   return (
     <Layout className='edit-screen'>
+    <div className="signup-container">
       <div className='sign-up-banner' style={{ backgroundImage: 'url(https://images.unsplash.com/reserve/2jEqzi01Ru2HBhGLTBgB_MG_5236.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)' }}> </div>
     <div className='form-container'>
       <h3 className='edit-header'>Sign Up</h3>
