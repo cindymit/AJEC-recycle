@@ -1,11 +1,13 @@
 .search-bar-container {
   display: flex;
   justify-items: center;
+  margin: 20px;
 }
 
 #search-bar {
   border-radius: 30px;
   margin: auto;
+  width: 50%;
 }
 
 #search-button {
