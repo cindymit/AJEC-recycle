@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
-import './BikeDetails.css'
-import  Layout  from '../../components/Layout/Layout'
-import { getBike, deleteBike } from '../../services/bikes'
-import { useParams, Link } from 'react-router-dom'
-
+import React from "react";
+import { useState, useEffect } from "react";
+import "./BikeDetails.css";
+import Layout from "../../components/Layout/Layout";
+import { getBike, deleteBike } from "../../services/bikes";
+import { useParams, Link } from "react-router-dom";
 
 const BikeDetails = (props) => {
-  const [bike, setBike] = useState(null)
-  const [isLoaded, setLoaded] = useState(false)
-  const { id } = useParams()
+  const [bike, setBike] = useState(null);
+  const [isLoaded, setLoaded] = useState(false);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchBike = async () => {
@@ -20,14 +20,12 @@ const BikeDetails = (props) => {
   }, [id])
 
   if (!isLoaded) {
-    return <h1>Loading...</h1>
+    return <h1>Loading...</h1>;
   }
-
-
 
   return (
     <Layout user={props.user}>
-    <div className='bike-detail'>
+<div className='bike-detail'>
         <img
           className='bike-detail-image'
           src={bike.imgURL}
@@ -53,7 +51,7 @@ const BikeDetails = (props) => {
           </div>
         </div>
       </div>
-      </Layout>
+    </Layout>
   );
 };
 
