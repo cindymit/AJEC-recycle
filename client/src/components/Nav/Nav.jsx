@@ -3,10 +3,10 @@ import "./Nav.css";
 
 const authenticatedOptions = (
   <>
-    <NavLink className="link" to="/create-bike">
+    <NavLink className="sell-link" to="/create-bike">
       Sell <span className="slash">//</span> Create
     </NavLink>
-    <NavLink className="link" to="/log-out">
+    <NavLink className="login-link" to="/log-out">
       Sign Out
     </NavLink>
   </>
@@ -14,22 +14,24 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <>
-    <NavLink className="link" to="/sign-up">
+    <NavLink className="signup-link" to="/sign-up">
       Sign Up
     </NavLink>
-    <NavLink className="link" to="/log-in">
+    <NavLink className="login-link" to="/log-in">
       {" "}
       Login
     </NavLink>
   </>
+  
 );
 
 const alwaysOptions = (
-  <>
-    <NavLink className="link" to="/all-bikes">
+  <div className="shop-container">
+    <NavLink className="shop-link" to="/all-bikes">
       Shop
     </NavLink>
-  </>
+  </div>
+ 
 );
 
 const Nav = ({ user }) => {
@@ -42,27 +44,11 @@ const Nav = ({ user }) => {
           </NavLink>
         </div>
 
-        {/* <div className="links">
-          <NavLink className="shop-link" to="/all-bikes">
-            Shop
-          </NavLink>
-          <NavLink className="sell-link" to="/create-bike">
-            Sell <span className="slash">//</span> Create
-          </NavLink>
-        </div> */}
-        {/* <div className="authentication">
-          <NavLink className="signup-link" to="/sign-up">
-            Sign-Up
-          </NavLink>
-          <NavLink className="login-link" to="/log-in">
-            Login
-          </NavLink>
-        </div> */}
-        <div className="links">
-          {user && <div className="link welcome">Welcome, {user.username}</div>}
+        {/* <div > */}
+          {user && <div className="welcome-link">Welcome, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
-        </div>
+        {/* </div> */}
       </div>
     </nav>
   );
