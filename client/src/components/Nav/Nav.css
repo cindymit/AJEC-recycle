@@ -1,3 +1,87 @@
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Oswald', sans-serif;
+}
+
 .nav-container {
-  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 2px solid black;
+}
+
+.logo-div {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 75px;
+}
+
+.links {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin: 70px 20px 0px 20px;
+}
+
+.shop-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  
+}
+
+.shop-link:hover {
+  color: #70FE6C;
+}
+
+.sell-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.sell-link:hover {
+  color: #70FE6C;
+}
+
+.slash {
+  color: #70FE6C;
+}
+
+.slash:hover {
+  color:black;
+}
+
+.authentication {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  text-align: right;
+  margin: 40px 20px 0px 20px;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.signup-link:hover {
+  color: #70FE6C;
+}
+
+.login-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.login-link:hover {
+  color: #70FE6C;
 }

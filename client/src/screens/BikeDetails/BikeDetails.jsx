@@ -12,12 +12,12 @@ const BikeDetails = (props) => {
 
   useEffect(() => {
     const fetchBike = async () => {
-      const product = await getBike(id);
-      setBike(product);
-      setLoaded(true);
-    };
-    fetchBike();
-  }, [id]);
+      const bike = await getBike(id)
+      setBike(bike)
+      setLoaded(true)
+    }
+    fetchBike()
+  }, [id])
 
   if (!isLoaded) {
     return <h1>Loading...</h1>;
@@ -25,18 +25,25 @@ const BikeDetails = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="bike-detail">
-        <img className="bike-detail-image" src={bike.imgURL} alt={bike.name} />
-        <div className="detail">
-          <div className="name">{bike.name}</div>
-          <div className="price">{`$${bike.price}`}</div>
-          <div className="description">{bike.description}</div>
-          <div className="button-container">
-            <Link className="edit-button" to={`/bikes/${bike._id}/edit`}>
+<div className='bike-detail'>
+        <img
+          className='bike-detail-image'
+          src={bike.imgURL}
+          alt={bike.brand}
+        />
+        <div className='detail'>
+          <div className='brand'>{bike.brand}</div>
+          <div className='price'>{`$${bike.price}`}</div>
+          <div className='category'>{bike.category}</div>
+          <div className='condition'>{bike.condition}</div>
+          <div className='sellerName'>{bike.sellerName}</div>
+          <div className='sellerEmail'>{bike.sellerEmail}</div>
+          <div className='button-container'>
+            <Link className='edit-button' to={`/bikes/${bike._id}/edit`}>
               Edit
             </Link>
             <button
-              className="delete-button"
+              className='delete-button'
               onClick={() => deleteBike(bike._id)}
             >
               Delete

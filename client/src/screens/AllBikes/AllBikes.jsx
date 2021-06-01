@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Bikes from "../../components/Bikes/Bikes";
 import Layout from "../../components/Layout/Layout";
 import Search from "../../components/Search/Search";
+import "./AllBikes.css";
 
 const AllBikes = () => {
   const [input, setInput] = useState("");
