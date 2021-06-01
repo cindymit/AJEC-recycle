@@ -7,8 +7,8 @@ const Filter = (props) => {
     }
 
     return (
-        <form className="-container" onSubmit={props.handleSubmit}>
-            <label htmlFor="filter">SORT BY:</label>
+        <form className="filter-container" onSubmit={props.handleSubmit}>
+            <label htmlFor="filter">SORT BIKES:</label>
             <select className="filter" onChange={handleFilter}>
                 <option className="option" value="name-ascending" >&nbsp; Alphabetically, A-Z &nbsp;</option>
                 <option value="name-descending">&nbsp; Alphabetically, Z-A &nbsp;</option>
