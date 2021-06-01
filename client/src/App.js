@@ -6,7 +6,7 @@ import CreateBike from "./screens/CreateBike/CreateBike";
 import Home from "./screens/Home/Home";
 import Login from "./screens/Login/Login";
 import Logout from "./screens/Logout/Logout";
-import SignUp from "./screens/SignUp/SignUp";
+import SignUp from "./screens/SignUp/SignUp.jsx";
 import { verifyUser } from "./services/users";
 import { Route, Switch, Redirect } from "react-router-dom";
 
@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="App">
       <Switch>
-
        
         <Route exact path="/">
           <Home user={user} />
