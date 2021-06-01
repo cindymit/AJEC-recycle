@@ -1,15 +1,28 @@
-body {
-  /* background-color: red; */
-}
-
-.post-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid black;
+.bike-container {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 3px 1px #cecece;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: red;
 }
 
 .bike-post {
-  background-color: purple;
-  border: 1px solid black;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background-color: blue;
+}
+
+.bike-post img {
+  width: 60%;
+  height: 50%;
+  border-bottom: none;
 }

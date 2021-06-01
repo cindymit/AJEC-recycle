@@ -4,16 +4,16 @@ import "./Bikes.css";
 const Bikes = (props) => {
   const allTheBikes = props.bikes.map((bike) => {
     return (
-      <div className="post-container">
-        <div className="bike-post">
-          <h3>Brand: {bike.brand}</h3>
-          <img src={bike.imgURL} alt="bike_image" className="bike-img" />
-          <h5>Category: {bike.category}</h5>
-          <h5>Condition: {bike.condition}</h5>
-          <h5>Price: ${bike.price}</h5>
-          <h5>Seller: {bike.sellerName}</h5>
-          <h5>Contact Info: {bike.sellerEmail}</h5>
-        </div>
+        <div className="bike-container">
+          <div className="bike-post">
+            <img src={bike.imgURL} alt="bike_image" className="bike-img" />
+            <p>Brand: {bike.brand}</p>
+            <p>Category: {bike.category}</p>
+            <p>Condition: {bike.condition}</p>
+            <p>Price: ${bike.price}</p>
+            <p>Seller: {bike.sellerName}</p>
+            <p>Contact Info: {bike.sellerEmail}</p>
+          </div>
         </div>
     );
   });
