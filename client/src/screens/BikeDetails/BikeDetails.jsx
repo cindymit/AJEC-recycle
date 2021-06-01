@@ -25,20 +25,23 @@ const BikeDetails = (props) => {
 
   return (
     <Layout user={props.user}>
-<div className='bike-detail'>
+      <div className="bikedetails-container">
+        <div className='bike-detail'>
         <img
           className='bike-detail-image'
           src={bike.imgURL}
           alt={bike.brand}
-        />
+          />
+          </div>
         <div className='detail'>
-          <div className='brand'>{bike.brand}</div>
+          <p>{bike.brand}</p>
           <div className='price'>{`$${bike.price}`}</div>
           <div className='category'>{bike.category}</div>
           <div className='condition'>{bike.condition}</div>
           <div className='sellerName'>{bike.sellerName}</div>
           <div className='sellerEmail'>{bike.sellerEmail}</div>
           <div className='button-container'>
+          </div>
             <Link className='edit-button' to={`/bikes/${bike._id}/edit`}>
               Edit
             </Link>
@@ -49,7 +52,6 @@ const BikeDetails = (props) => {
               Delete
             </button>
           </div>
-        </div>
       </div>
     </Layout>
   );

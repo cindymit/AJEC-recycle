@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="App">
       <Switch>
-
        
         <Route exact path="/">
           <Home user={user} />

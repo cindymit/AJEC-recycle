@@ -1,4 +1,33 @@
 
+.bikedetails-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: space-evenly;
+  border-color: 1px solid purple;
+}
+
+.bike-detail {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border-color: 1px solid orange;
+}
+
+.detail {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  border-color: 1px solid green;
+}
+
+.bike-detail-image{
+  border: 1px solid red;
+  width: 250px;
+  height: 250px;
+}
+
+/* .bike-detail{
+
+
 
 .detail{
   border: 1px solid red;
@@ -12,6 +41,11 @@
 .bike-detail-image{
   border: 1px solid red;
 
+  width: 250px;
+  height: 250px;
+}
+
+
   padding: 0 40px;
   padding-bottom: 5px;
   width: 100vh;
@@ -22,6 +56,7 @@
   align-items: center;
 
 }
+
 
 .edit-button{
   background-color: #00c160;
@@ -55,3 +90,10 @@
 
 
 
+
+.brand{
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
