@@ -3,9 +3,9 @@ import Layout from "../../components/Layout/Layout";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="home-div">
         <div className="button-container">
           <img
