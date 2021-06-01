@@ -5,6 +5,7 @@
   grid-template-rows: 1fr;
   justify-content: space-evenly;
   border-color: 1px solid purple;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .bike-detail {
@@ -21,43 +22,10 @@
 
 .bike-detail-image{
   border: 1px solid red;
+  margin-left: 100px;
   width: 250px;
   height: 250px;
 }
-
-/* .bike-detail{
-
-
-
-.detail{
-  border: 1px solid red;
-  padding: 0 40px;
-  padding-bottom: 5px;
-  width: 100vh;
-  margin-left: 150vh;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.bike-detail-image{
-  border: 1px solid red;
-
-  width: 250px;
-  height: 250px;
-}
-
-
-  padding: 0 40px;
-  padding-bottom: 5px;
-  width: 100vh;
-  margin-left: 20vh;
-  margin-top:20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-
 .edit-button{
   background-color: #00c160;
   color: white;
@@ -84,16 +52,46 @@
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+} 
+
+
+
+
+
+/* .detail{
+  border: 1px solid red;
+  padding: 0 40px;
+  padding-bottom: 5px;
+  width: 100vh;
+  margin-left: 150vh;
+  
+}
+
+.bike-detail-image{
+  border: 1px solid red;
+
+  width: 250px;
+  height: 250px;
 }
 
 
+  padding: 0 40px;
+  padding-bottom: 5px;
+  width: 100vh;
+  margin-left: 20vh;
+  margin-top:20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+*/
 
 
 
 
-.brand{
-  border: 1px solid red;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
+
+
+
