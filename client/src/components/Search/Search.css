@@ -1,0 +1,20 @@
+.search-bar-container {
+  display: flex;
+  justify-items: center;
+}
+
+#search-bar {
+  border-radius: 30px;
+  margin: auto;
+}
+
+#search-button {
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+}
+
+#search-button:hover {
+  background-color: salmon;
+  transition: 1s;
+}
