@@ -7,14 +7,14 @@ import Login from "./screens/Login/Login";
 import Logout from "./screens/Logout/Logout";
 import Signup from "./screens/Signup/Signup";
 import { Route, Switch } from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/all-bikes" component={AllBikes} />
+        <Route exact path="/all-bikes" component={AllBikes} />
         <Route path="/create-bike" component={CreateBike} />
         <Route exact path="/bikes/:id" component={BikeDetails} />
         <Route path="/bikes/:id/edit" component={BikeEdit} />
