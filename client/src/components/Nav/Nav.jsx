@@ -4,7 +4,7 @@ import "./Nav.css";
 const authenticatedOptions = (
   <>
     <NavLink className="sell-link" to="/create-bike">
-      Sell <span className="slash">//</span> Create
+      Sell
     </NavLink>
     <NavLink className="login-link" to="/log-out">
       Sign Out
