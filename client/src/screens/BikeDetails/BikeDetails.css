@@ -1,0 +1,39 @@
+.bike-detail{
+
+  border: 1px solid red;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+
+
+.bike-detail-image{
+  border: 1px solid red;
+  /* width: 250px;
+  height: 250px; */
+}
+
+.bike-detail-image{
+  width: 600px;
+  padding: 0 40px;
+  padding-bottom: 5px;
+  border-bottom: none;
+}
+
+.detail{
+  display: flex;
+  padding: 100px;
+  padding-top: 80px;
+  justify-content: space-around;
+  align-items: center;
+  height: 40rem;
+}
+
+.brand{
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

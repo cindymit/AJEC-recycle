@@ -3,7 +3,7 @@ import "./Search.css";
 
 const Search = (props) => {
   return (
-    <form className="search-bar-container">
+    <form onSubmit={props.handleSubmit}className="search-bar-container">
       <input
         id="search-bar"
         type="text"

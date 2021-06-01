@@ -4,15 +4,15 @@ body {
 }
 
 .nav-container {
+  border-bottom: 2px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  border-bottom: 2px solid black;
 }
 
 .logo-div {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
+ grid-column: 2/ span 1;
+ grid-row: 1/ span 1 ;
   text-align: center;
 }
 
@@ -23,8 +23,7 @@ body {
 }
 
 .links {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
+ 
   margin: 70px 20px 0px 20px;
 }
 
@@ -59,8 +58,7 @@ body {
 }
 
 .authentication {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
+ 
   text-align: right;
   margin: 40px 20px 0px 20px;
 }
@@ -84,4 +82,9 @@ body {
 
 .login-link:hover {
   color: #70FE6C;
+}
+.welcome-link{
+  text-align: right;
+  margin: 40px 20px 0px 20px; 
+  font-size: 20px
 }
