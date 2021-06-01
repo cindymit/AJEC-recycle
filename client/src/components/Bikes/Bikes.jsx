@@ -1,11 +1,11 @@
-import Link from "react";
+import { Link } from "react-router-dom";
 import "./Bikes.css";
 
 const Bikes = (props) => {
   const allTheBikes = props.bikes.map((bike) => {
     return (
       <div className="bike-container">
-        {/* <Link to={`/bikes/${props.id}`} className="bike-link"> */}
+        <Link to={`/bikes/${bike._id}`} className="bike-link">
         <div className="bike-post">
           <img src={bike.imgURL} alt="bike_image" className="bike-img" />
           <p><strong>Brand:</strong> {bike.brand}</p>
@@ -15,7 +15,7 @@ const Bikes = (props) => {
           <p><strong>Seller:</strong> {bike.sellerName}</p>
           <p><strong>Contact Info:</strong> {bike.sellerEmail}</p>
         </div>
-        {/* </Link> */}
+        </Link>
       </div>
     );
   });

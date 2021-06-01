@@ -24,7 +24,7 @@ const AllBikes = () => {
       console.log(allBikes);
     };
     fetchBikes();
-  }, filterBike);
+  }, [bikes]);
 
   return (
     <div>
