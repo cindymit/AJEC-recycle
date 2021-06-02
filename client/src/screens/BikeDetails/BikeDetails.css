@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   font-family: 'Montserrat', sans-serif;
   padding-top: 100px;
-}
+
 
 .bike-detail {
   grid-column: 1 / span 1;
@@ -55,21 +55,13 @@
     sans-serif;
 }
 
-
-
 .bike-detail-image{
-  /* border: 1px solid red; */
   margin-left: 100px;
-  width: 600px;
-  height: 400px;
-}
-
-.bike-detail-image {
-  margin-top: 20px;
-  width: 250px;
-  height: 250px;
+  width: 500px;
+  height: auto;
   border-bottom: none;
 }
+
 .edit-button {
   background-color: #00c160;
   color: white;

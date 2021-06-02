@@ -36,10 +36,10 @@ const BikeDetails = (props) => {
         <div className='detail'>
           <div className='brand'>{bike.brand}</div>
           <div className='price'>{`$${bike.price}`}</div>
-          <div className='category'>{bike.category}</div>
-          <div className='condition'>{bike.condition}</div>
-          <div className='sellerName'>{bike.sellerName}</div>
-          <div className='sellerEmail'>{bike.sellerEmail}</div>
+          <div className='category'><strong>Category:</strong> {bike.category}</div>
+          <div className='condition'><strong>Condition:</strong> {bike.condition}</div>
+          <div className='sellerName'><strong>Seller Name:</strong> {bike.sellerName}</div>
+          <div className='sellerEmail'><strong>Seller Email:</strong> {bike.sellerEmail}</div>
           <div className='button-container'>
           </div>
             <Link className='edit-button' to={`/bikes/${bike._id}/edit`}>

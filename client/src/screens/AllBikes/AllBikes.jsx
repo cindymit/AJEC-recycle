@@ -63,14 +63,6 @@ const AllBikes = () => {
     setApplySort(false)
   }
 
-  // const handleSearch = (event) => {
-  //   const results = bikes.filter((bike) =>
-  //     bike.name.toLowerCase().includes(event.target.value.toLowerCase())
-  //   )
-  //   setSearchResult(results)
-  //   setApplySort(true)
-  // }
-
   const handleSubmit = (event) => event.preventDefault()
 
 
