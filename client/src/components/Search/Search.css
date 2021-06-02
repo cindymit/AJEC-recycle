@@ -7,16 +7,21 @@
 #search-bar {
   border-radius: 30px;
   margin: auto;
-  width: 50%;
+  width: 80%;
 }
 
 #search-button {
-  background-color: red;
+  background-color: #70fe6c;
+  border-width: 5px;
+  border-color: black;
+  border: solid;
+  color: black;
   border: none;
   border-radius: 30px;
 }
 
-#search-button:hover {
-  background-color: salmon;
+/* #search-button:hover {
+  background-color: white;
+  border: black;
   transition: 1s;
-}
+} */
