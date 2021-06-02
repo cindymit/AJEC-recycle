@@ -19,9 +19,7 @@ body {
 }
 
 .logo {
-  text-decoration: none;
-  color: black;
-  font-size: 75px;
+  border-bottom: none;
 }
 
 .links {
@@ -106,6 +104,15 @@ body {
 
 .hamburger {
   display: none;
+  background-color: #cecece;
+  box-shadow: 2px 2px darkgrey;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 30px;
+  cursor: pointer;
 }
 
 /* // MEDIA QUERY // */

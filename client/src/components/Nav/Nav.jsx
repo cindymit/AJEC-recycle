@@ -58,11 +58,11 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav-container">
         <div className="logo-div">
-          <NavLink className="logo" to="/">
-            Re-Cycle
+          <NavLink to="/">
+            <img src="https://i.imgur.com/gcxXGdy.jpg" alt="logo" width="300px" height="400px" className="logo" />
           </NavLink>
         </div>
-        <div classname="menu-button">
+        <div className="menu-button">
           <button
             className="hamburger"
             onClick={() => setHamburger(!hamburger)}
