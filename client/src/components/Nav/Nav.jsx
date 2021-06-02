@@ -6,7 +6,7 @@ const authenticatedOptions = (
     <NavLink className="sell-link" to="/create-bike">
       Sell
     </NavLink>
-    <NavLink className="login-link" to="/log-out">
+    <NavLink className="login-out" to="/log-out">
       Sign Out
     </NavLink>
   </>

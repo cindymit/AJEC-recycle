@@ -54,7 +54,7 @@ const CreateBike = () => {
             className="input-imgURL"
             placeholder="Image URL"
             value={bike.imgURL}
-            name="img_URL"
+            name="imgURL"
             required
             onChange={handleChange}
           />
@@ -86,7 +86,7 @@ const CreateBike = () => {
             className="input-name"
             placeholder="Name"
             value={bike.sellerName}
-            name="seller_name"
+            name="sellerName"
             required
             onChange={handleChange}
           />
@@ -94,7 +94,7 @@ const CreateBike = () => {
             className="input-email"
             placeholder="Email"
             value={bike.sellerEmail}
-            name="seller_email"
+            name="sellerEmail"
             required
             onChange={handleChange}
           />
