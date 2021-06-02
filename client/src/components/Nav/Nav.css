@@ -91,6 +91,16 @@ body {
   text-decoration: none;
   color: black;
   font-size: 20px;
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+  margin: 20px;
+}
+
+.login-out{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
   grid-column: 5 / span 1;
   grid-row: 1 / span 1;
   text-align: center;
