@@ -23,6 +23,14 @@
   flex-direction: column;
 }
 
-.layout-children{
-  display: flex;
+
+.login-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.login-button:hover {
+  background-color:lime;
 }

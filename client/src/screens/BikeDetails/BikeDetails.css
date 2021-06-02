@@ -5,9 +5,10 @@
   justify-content: space-evenly;
   font-family: 'Montserrat', sans-serif;
   padding-top: 100px;
-
+}
 
 .bike-detail {
+  
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
