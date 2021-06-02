@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './Login.css'
 import { signIn } from '../../services/users'
 import { useHistory } from 'react-router-dom'
+import Layout from "../../components/Layout/Layout"
 
 const Login = (props) => {
   const history = useHistory()
@@ -55,9 +56,10 @@ const Login = (props) => {
   const { email, password } = form
 
   return (
+    <Layout>
     <div className='form-container'>
       <h3>Sign In</h3>
-      <form onSubmit={onSignIn}>
+      <form className='login-form' onSubmit={onSignIn}>
         <label>Email</label>
         <input
           required
@@ -78,7 +80,8 @@ const Login = (props) => {
         />
         {renderError()}
       </form>
-    </div>
+      </div>
+      </Layout>
   )
 
 };
