@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 import "./Nav.css";
 
 const authenticatedOptions = (
@@ -22,7 +25,6 @@ const unauthenticatedOptions = (
       Login
     </NavLink>
   </>
-  
 );
 
 const alwaysOptions = (
@@ -31,24 +33,50 @@ const alwaysOptions = (
       Shop
     </NavLink>
   </div>
- 
 );
 
 const Nav = ({ user }) => {
+  const [visible, setVisible] = useState(true);
+  const [hamburger, setHamburger] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 480) {
+        setVisible(true);
+        setHamburger(false);
+      } else if (window.innerWidth <= 480) {
+        setVisible(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav>
       <div className="nav-container">
         <div className="logo-div">
-          <NavLink className="logo" to="/">
-            Re-Cycle
+          <NavLink to="/">
+            <img src="https://i.imgur.com/gcxXGdy.jpg" alt="logo" width="300px" height="400px" className="logo" />
           </NavLink>
         </div>
-
-        {/* <div > */}
-          {user && <div className="welcome-link">Welcome, {user.username}</div>}
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
-        {/* </div> */}
+        <div className="menu-button">
+          <button
+            className="hamburger"
+            onClick={() => setHamburger(!hamburger)}
+          >
+            <FontAwesomeIcon icon={faBars} size="2x" />
+          </button>
+          <div className="menu-list" style={{ display: visible || hamburger ? "flex": "none"}}>
+            {user && (
+              <div className="welcome-link">Welcome, {user.username}</div>
+            )}
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
+        </div>
       </div>
     </nav>
   );

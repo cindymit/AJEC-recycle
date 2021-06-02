@@ -41,7 +41,8 @@ input{
     margin: 7px;
     font-size: 20px;
 }
-button{
+
+.signup-button{
   background-color: #00c160;
   color: white;
   font-size: 20px;
