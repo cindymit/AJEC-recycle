@@ -34,7 +34,7 @@ const BikeDetails = (props) => {
           />
           </div>
         <div className='detail'>
-          <p>{bike.brand}</p>
+          <div className='brand'>{bike.brand}</div>
           <div className='price'>{`$${bike.price}`}</div>
           <div className='category'>{bike.category}</div>
           <div className='condition'>{bike.condition}</div>

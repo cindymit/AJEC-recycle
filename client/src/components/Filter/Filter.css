@@ -1,4 +1,8 @@
 .filter-container {
-border: 1px solid red;
+/* border: 1px solid red; */
 font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+margin-right: 30px; 
+display: flex;
+align-items: flex-end;
+
 }
