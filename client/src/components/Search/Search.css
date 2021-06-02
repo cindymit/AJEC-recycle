@@ -20,8 +20,8 @@
   border-radius: 30px;
 }
 
-/* #search-button:hover {
-  background-color: white;
-  border: black;
-  transition: 1s;
-} */
+#search-button:hover {
+
+  border: 1px solid black;
+  transition: .3s;
+}
