@@ -18,6 +18,11 @@
   box-shadow: 0 0 3px 1px #cecece;
 }
 
+.bike-post:hover{
+  transform: scale(1.02);
+  opacity: .9;
+}
+
 .bike-post img {
   width: 95%;
   height: 55%;
