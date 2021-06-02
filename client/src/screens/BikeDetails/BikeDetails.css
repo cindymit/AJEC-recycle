@@ -4,6 +4,7 @@
   grid-template-rows: 1fr;
   justify-content: space-evenly;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 100px;
 }
 
 .bike-detail {
