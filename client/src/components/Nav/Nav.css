@@ -1,18 +1,20 @@
 body {
   /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .nav-container {
   border-bottom: 2px solid black;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 120px 120px auto 120px 120px;
   grid-template-rows: 1fr;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo-div {
- grid-column: 2/ span 1;
- grid-row: 1/ span 1 ;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
   text-align: center;
 }
 
@@ -23,47 +25,58 @@ body {
 }
 
 .links {
- 
   margin: 70px 20px 0px 20px;
 }
 
 .shop-link {
-  margin-right: 20px;
   text-decoration: none;
   color: black;
   font-size: 20px;
   
 }
 
+.shop-container{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+  margin: 20px;
+}
+
 .shop-link:hover {
-  color: #70FE6C;
+  color: #70fe6c;
 }
 
 .sell-link {
   text-decoration: none;
   color: black;
   font-size: 20px;
+  grid-column: 2/ span 1;
+    grid-row: 1/ span 1;
+    text-align: center;
+    margin: 20px;
 }
 
 .sell-link:hover {
-  color: #70FE6C;
+  color: #70fe6c;
 }
 
 .slash {
-  color: #70FE6C;
+  color: #70fe6c;
 }
 
 .slash:hover {
-  color:black;
+  color: black;
 }
 
-.authentication {
- 
+/* .authentication {
   text-align: right;
   margin: 40px 20px 0px 20px;
-}
+} */
 
 .signup-link {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -71,20 +84,26 @@ body {
 }
 
 .signup-link:hover {
-  color: #70FE6C;
+  color: #70fe6c;
 }
 
 .login-link {
   text-decoration: none;
   color: black;
   font-size: 20px;
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+  margin: 20px;
 }
 
 .login-link:hover {
-  color: #70FE6C;
+  color: #70fe6c;
 }
-.welcome-link{
-  text-align: right;
-  margin: 40px 20px 0px 20px; 
-  font-size: 20px
+.welcome-link {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
 }
