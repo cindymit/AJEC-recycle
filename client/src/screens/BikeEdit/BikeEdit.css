@@ -104,4 +104,14 @@
   margin: 7px;
 }
 
+@media screen and (max-width: 769px){
+.bike-edit{
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-bike-image{
+  width: 430px;
+}
+}
 

@@ -1,32 +1,69 @@
-
 .bikedetails-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: space-evenly;
-  border-color: 1px solid purple;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 100px;
 }
 
 .bike-detail {
+  
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border-color: 1px solid orange;
 }
 
 .detail {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  border-color: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.category{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.condition{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.sellerName{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.sellerEmail{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 .bike-detail-image{
-  border: 1px solid red;
   margin-left: 100px;
-  width: 250px;
-  height: 250px;
+  width: 500px;
+  height: auto;
+  border-bottom: none;
 }
-.edit-button{
+
+.edit-button {
   background-color: #00c160;
   color: white;
   font-size: 20px;
@@ -35,10 +72,14 @@
   margin: 10px 0px;
   cursor: pointer;
   font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
-  border: 2px solid grey
+  border: 2px solid grey;
+  width: 60Px;
+  text-align: center;
 }
 
-.edit-button:hover {background-color: #3e8e41}
+.edit-button:hover {
+  background-color: #3e8e41;
+}
 
 .edit-button:active {
   background-color: #3e8e41;
@@ -46,7 +87,9 @@
   transform: translateY(4px);
 }
 
-.delete-button:hover {background-color: #3e8e41}
+.delete-button:hover {
+  background-color: #3e8e41;
+}
 
 .delete-button:active {
   background-color: #3e8e41;
@@ -54,44 +97,31 @@
   transform: translateY(4px);
 } 
 
-
-
-
-
-/* .detail{
-  border: 1px solid red;
-  padding: 0 40px;
-  padding-bottom: 5px;
-  width: 100vh;
-  margin-left: 150vh;
-  
+.brand{
+  font-size: 45px;
 }
 
-.bike-detail-image{
-  border: 1px solid red;
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .bikedetails-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-bottom: 100px;
+  }
 
-  width: 250px;
-  height: 250px;
+  .detail {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .bike-detail {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .bike-detail-image {
+    width: 250px;
+    height: 250px;
+  }
 }
-
-
-  padding: 0 40px;
-  padding-bottom: 5px;
-  width: 100vh;
-  margin-left: 20vh;
-  margin-top:20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-
-*/
-
-
-
-
-
-
-
