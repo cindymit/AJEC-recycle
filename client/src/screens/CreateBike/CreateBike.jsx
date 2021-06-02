@@ -58,22 +58,38 @@ const CreateBike = () => {
             required
             onChange={handleChange}
           />
-          <input
-            className="input-category"
-            placeholder="Category"
-            value={bike.content}
+          <select
             name="category"
             required
+            id="category"
+            value={bike.category}
             onChange={handleChange}
-          />
-          <input
-            className="input-condition"
-            placeholder="Condition"
-            value={bike.condition}
+          >
+            <option disabled={bike.category} selected>
+              Pick One
+            </option>
+            <option value="Comfort">Comfort</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="Mountain">Mountain</option>
+            <option value="Road">Road</option>
+            <option value="Youth">Youth</option>
+          </select>
+
+          <select
             name="condition"
             required
+            id="condition"
+            value={bike.condition}
             onChange={handleChange}
-          />
+          >
+            <option disabled={bike.condition} selected>
+              Pick One
+            </option>
+            <option value="New">New</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+          </select>
           <input
             className="input-price"
             placeholder="Price"
