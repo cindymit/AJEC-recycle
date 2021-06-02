@@ -44,20 +44,21 @@ const Login = (props) => {
     const toggleForm = form.isError ? 'danger' : ''
     if (form.isError) {
       return (
-        <button type='submit' className={toggleForm}>
+        <button  type='submit' className={toggleForm}>
           {form.errorMsg}
         </button>
       )
     } else {
-      return <button type='submit'>Sign In</button>
+      return <button className="login-button" type='submit'>Sign In</button>
     }
   }
 
   const { email, password } = form
 
   return (
-    <Layout>
-    <div className='form-container'>
+    
+    <Layout className="layout-div">
+    <div className='login-container'>
       <h3>Sign In</h3>
       <form className='login-form' onSubmit={onSignIn}>
         <label>Email</label>
@@ -82,6 +83,7 @@ const Login = (props) => {
       </form>
       </div>
       </Layout>
+      
   )
 
 };
