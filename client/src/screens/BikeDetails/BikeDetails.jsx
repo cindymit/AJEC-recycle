@@ -15,13 +15,13 @@ const BikeDetails = (props) => {
 
   useEffect(() => {
     const fetchBike = async () => {
-      const bike = await getBike(id)
-      setBike(bike)
-      setLoaded(true)
-    }
-    console.log(bike)
-    fetchBike()
-  }, [id])
+      const bike = await getBike(id);
+      setBike(bike);
+      setLoaded(true);
+    };
+    fetchBike();
+  }, [id]);
+
 
   console.log(bike)
 
