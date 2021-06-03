@@ -81,7 +81,7 @@ const BikeEdit = (props) => {
           <select
             name="category"
             required
-            id="category"
+            id="edit-category"
             value={bike.category}
             onChange={handleChange}
           >
@@ -98,7 +98,7 @@ const BikeEdit = (props) => {
           <select
             name="condition"
             required
-            id="condition"
+            id="edit-condition"
             value={bike.condition}
             onChange={handleChange}
           >

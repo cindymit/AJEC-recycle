@@ -41,10 +41,10 @@ const Nav = ({ user }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 480) {
+      if (window.innerWidth > 780) {
         setVisible(true);
         setHamburger(false);
-      } else if (window.innerWidth <= 480) {
+      } else if (window.innerWidth <= 780) {
         setVisible(false);
       }
     };
@@ -59,7 +59,7 @@ const Nav = ({ user }) => {
       <div className="nav-container">
         <div className="logo-div">
           <NavLink to="/">
-            <img src="https://i.imgur.com/gcxXGdy.jpg" alt="logo" width="300px" height="400px" className="logo" />
+            <img src="https://i.imgur.com/Xtbdmmj.jpg" alt="logo" className="logo" />
           </NavLink>
         </div>
         <div className="menu-button">

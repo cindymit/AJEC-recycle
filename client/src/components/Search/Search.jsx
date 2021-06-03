@@ -9,7 +9,7 @@ const Search = (props) => {
         type="text"
         value={props.search}
         onChange={(e) => props.setSearch(e.target.value)}
-        placeholder="Search bikes"
+        placeholder="Search bikes by brand"
       />
       <button id="search-button" type="submit">
         Search

@@ -6,7 +6,7 @@ import { createBike } from "../../services/bikes";
 import "./CreateBike.css";
 
 
-const CreateBike = () => {
+const CreateBike = (props) => {
     const [bike, setBike] = useState({
       brand: "",
       imgURL: "",
@@ -19,13 +19,6 @@ const CreateBike = () => {
   
     const [isCreated, setCreated] = useState(false);
   
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-  
-      const created = await createBike(bike);
-      setCreated({ created });
-    };
-  
     const handleChange = (e) => {
       const { name, value } = e.target;
       setBike({
@@ -33,12 +26,19 @@ const CreateBike = () => {
         [name]: value,
       });
     };
+  
+      const handleSubmit = async (e) => {
+      e.preventDefault();
+      const created = await createBike(bike);
+      setCreated({ created });
+    };
+  
     if (isCreated) {
       return <Redirect to={"/all-bikes"} />;
     }
 
   return (
-    <Layout>
+    <Layout user ={props.user}>
       <div className="form-div">
         <h1>Create your bike post here!</h1>
         <form className="create-form" onSubmit={handleSubmit}>
