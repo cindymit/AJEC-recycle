@@ -26,57 +26,20 @@ const BikeDetails = (props) => {
   console.log(bike)
 
   const authenticatedOptions = (
-    <>
-      {console.log(bike)}
-      <div className="bikedetails-container">
-    <div className='bike-detail'>
-    <img
-      className='bike-detail-image'
-      src={bike.imgURL}
-      alt={bike.brand}
-      />
-      </div>
-    <div className='detail'>
-      <div className='brand'>{bike.brand}</div>
-      <div className='price'>{`$${bike.price}`}</div>
-      <div className='category'><strong>Category:</strong> {bike.category}</div>
-      <div className='condition'><strong>Condition:</strong> {bike.condition}</div>
-      <div className='button-container'>
-      </div>
-      </div>
-  </div>
+    <div className="user-details">
       <div className='sellerName'><strong>Seller Name:</strong> {bike.sellerName}</div>
       <div className='sellerEmail'><strong>Seller Email:</strong> {bike.sellerEmail}</div>
       <Link className='edit-button' to={`/bikes/${bike._id}/edit`}>
           Edit
         </Link>
-        <button
+      <button
+        className="delete-button"
           onClick={() => deleteBike(bike._id)}
         >
           Delete
         </button>
-    </>
+    </div>
   );
-
-  const unauthenticatedOptions = (
-    <div className="bikedetails-container">
-    <div className='bike-detail'>
-    <img
-      className='bike-detail-image'
-      src={bike.imgURL}
-      alt={bike.brand}
-      />
-      </div>
-    <div className='detail'>
-      <div className='brand'>{bike.brand}</div>
-      <div className='price'>{`$${bike.price}`}</div>
-      <div className='category'><strong>Category:</strong> {bike.category}</div>
-      <div className='condition'><strong>Condition:</strong> {bike.condition}</div>
-      <div className='button-container'>
-      </div>
-      </div>
-  </div>
-  )
 
   if (!isLoaded) {
     return <h1>Loading...</h1>;
@@ -84,7 +47,25 @@ const BikeDetails = (props) => {
 
   return (
     <Layout user={props.user}>
-    {!props.user ? unauthenticatedOptions : authenticatedOptions}
+          <div className="bikedetails-container">
+    <div className='bike-detail'>
+    <img
+      className='bike-detail-image'
+      src={bike.imgURL}
+      alt={bike.brand}
+      />
+      </div>
+    <div className='detail'>
+      <div className='brand'>{bike.brand}</div>
+      <div className='price'>{`$${bike.price}`}</div>
+      <div className='category'><strong>Category:</strong> {bike.category}</div>
+      <div className='condition'><strong>Condition:</strong> {bike.condition}</div>
+      <div className='button-container'>
+          </div>
+          {!props.user ? null : authenticatedOptions}
+      </div>
+  </div>
+    
     </Layout>
   );
 };
