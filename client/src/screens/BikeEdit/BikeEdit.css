@@ -104,7 +104,7 @@
   margin: 7px;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 780px){
 .bike-edit{
   display: flex;
   flex-direction: column;
