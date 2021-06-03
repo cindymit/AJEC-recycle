@@ -5,10 +5,10 @@
   justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   padding-top: 100px;
+  margin-bottom: 90px;
 }
 
 .bike-detail {
-  
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
@@ -70,6 +70,7 @@
   padding: 10px 60px;
   border-radius: 5px;
   margin: 10px 0px;
+  margin-right: 5px;
   cursor: pointer;
   font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
   border: 2px solid grey;
@@ -120,5 +121,9 @@
     width: 250px;
     height: 250px;
     margin-left: 0px;
+  }
+
+  .edit-button{
+    margin-right: 5px;
   }
 }
