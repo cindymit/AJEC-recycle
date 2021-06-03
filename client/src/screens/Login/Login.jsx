@@ -58,10 +58,20 @@ const Login = (props) => {
   return (
     
     <Layout className="layout-div">
-    <div className='login-container'>
-      <h3>Sign In</h3>
+      <div className="signin-container">
+        <div
+          className="sign-up-banner"
+          style={{
+            backgroundImage:
+              "url(https://i.imgur.com/63zWTqb.jpg)",
+          }}
+        >
+          {" "}
+        </div>
+        </div>
+      <div className='login-container'>
+      <h3 className="signin-label">Sign In</h3>
       <form className='login-form' onSubmit={onSignIn}>
-        <label>Email</label>
         <input
           required
           type='text'
@@ -70,7 +80,6 @@ const Login = (props) => {
           placeholder='Enter Email'
           onChange={handleChange}
         />
-        <label>Password</label>
         <input
           required
           name='password'
@@ -81,7 +90,7 @@ const Login = (props) => {
         />
         {renderError()}
       </form>
-      </div>
+        </div>
       </Layout>
       
   )

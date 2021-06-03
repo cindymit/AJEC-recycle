@@ -3,18 +3,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-top: 100px;
   margin-bottom: 90px;
 }
 
-.bike-detail {
-  display: flex;
-  align-items: center;
-}
-
-.bike-detail-image{
-  margin-left: 50px;
+.bike-detail-image {
   width: 500px;
   height: auto;
   border-bottom: none;
@@ -24,35 +18,35 @@
   text-align: center;
 }
 
-.price{
+.price {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
-.category{
+.category {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
-.condition{
+.condition {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
-.sellerName{
+.sellerName {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
-.sellerEmail{
+.sellerEmail {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -60,7 +54,7 @@
 }
 
 .edit-button {
-  background-color: #8CC223;
+  background-color: #8cc223;
   color: black;
   font-size: 20px;
   padding: 10px 60px;
@@ -68,9 +62,9 @@
   margin: 10px 0px;
   margin-right: 5px;
   cursor: pointer;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   border: 2px solid grey;
-  width: 60Px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
 }
@@ -80,24 +74,27 @@
 }
 
 .delete-button {
-  background-color: #8CC223;
+  background-color: #8cc223;
   color: black;
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
-} 
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+}
 
-.brand{
-  font-size: 45px;
+.brand {
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 667px) {
   .bike-detail-image {
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 275px;
     margin-left: 0px;
     margin-bottom: 20px;
   }
@@ -106,7 +103,7 @@
     font-size: 2.5em;
   }
 
-  .edit-button{
+  .edit-button {
     margin-right: 5px;
   }
 }

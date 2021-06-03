@@ -1,7 +1,5 @@
-
 .login-form{
   background-color: #fff;
-  box-shadow: 0 28px 32px 0 rgb(12 0 51 / 10%);
   max-width: 496px;
   text-align: center;
   
@@ -10,13 +8,15 @@
 
 .login-container{
   background-color: #fff;
-  padding: 30px 20px;
-  box-shadow: 0 28px 32px 0 rgb(12 0 51 / 10%);
-  max-width: 496px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 90px;
+    padding: 30px 20px;
+    margin-top: -125px;
+    box-shadow: 0 28px 32px 0 rgb(12 0 51 / 10%);
+    max-width: 496px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .layout-div{
@@ -34,4 +34,12 @@
 
 .login-button:hover {
   color: white;
+}
+
+.signin-label {
+  text-transform: uppercase;
+    font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 30px;
 }
