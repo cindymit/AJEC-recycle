@@ -30,14 +30,16 @@ const BikeDetails = (props) => {
       <div className='sellerName'><strong>Seller Name:</strong> {bike.sellerName}</div>
       <div className='sellerEmail'><strong>Seller Email:</strong> {bike.sellerEmail}</div>
       <Link className='edit-button' to={`/bikes/${bike._id}/edit`}>
-          Edit
+        Edit
         </Link>
+      <Link to="/all-bikes">
       <button
         className="delete-button"
           onClick={() => deleteBike(bike._id)}
         >
           Delete
         </button>
+        </Link>
     </div>
   );
 
