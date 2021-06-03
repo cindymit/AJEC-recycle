@@ -46,20 +46,6 @@ const Home = (props) => {
           />
           </div>
         </div>
-        <div className="home-icons">
-          {/* <img
-            src="https://img.icons8.com/wired/100/000000/get-cash.png"
-            alt="sell"
-          /> */}
-          {/* <img
-            src="https://img.icons8.com/wired/100/000000/buy.png"
-            alt="buy"
-          /> */}
-          {/* <img
-            src="https://img.icons8.com/wired/100/000000/bicycle.png"
-            alt="ride"
-          /> */}
-        </div>
       </div>
     </Layout>
   );
