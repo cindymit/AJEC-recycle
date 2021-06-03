@@ -27,7 +27,8 @@
 .edit-header{
   text-transform: uppercase;
   font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   font-size: 30px;
 }
 
@@ -55,4 +56,13 @@ input{
 
 .signup-button:hover {
   color: white;
+}
+
+@media screen and (max-width: 460px){
+  input{
+    width: 18rem;
+  }
+  .form-container{
+    max-width: 300px;
+  }
 }
