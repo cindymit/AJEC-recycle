@@ -7,6 +7,17 @@
   height: 40rem;
 }
 
+.edit-description{
+  height: 10rem;
+  width: 24rem;
+  overflow: scroll;
+}
+
+/* .edit-description:focus{
+  
+  background-color: red;
+} */
+
 .image-container {
   display: flex;
   flex-direction: column;

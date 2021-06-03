@@ -95,14 +95,13 @@ const BikeEdit = (props) => {
             <option value="Road">Road</option>
             <option value="Youth">Youth</option>
           </select>
-          <input
-            className="edit-description"
-            placeholder="Image URL"
+          <input className="edit-description"
+            placeholder="description"
             value={bike.description}
             name="description"
             required
-            onChange={handleChange}
-          />
+            onChange={handleChange}>
+            </input>
           <select
             name="condition"
             required
