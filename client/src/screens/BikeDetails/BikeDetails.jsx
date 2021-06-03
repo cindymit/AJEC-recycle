@@ -46,7 +46,6 @@ const BikeDetails = (props) => {
               Edit
             </Link>
             <button
-              className='delete-button'
               onClick={() => deleteBike(bike._id)}
             >
               Delete

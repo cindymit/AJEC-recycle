@@ -11,17 +11,16 @@
 }
 
 #search-button {
-  background-color: #70fe6c;
-  border-width: 5px;
-  border-color: black;
-  border: solid;
+  background-color: #8CC223;
   color: black;
-  border: none;
-  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
 }
 
 #search-button:hover {
-
-  border: 1px solid black;
-  transition: .3s;
+  color: white;
 }

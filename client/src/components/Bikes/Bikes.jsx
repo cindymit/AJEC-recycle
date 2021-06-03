@@ -11,9 +11,7 @@ const Bikes = (props) => {
           <p><strong>Brand:</strong> {bike.brand}</p>
           <p><strong>Category:</strong> {bike.category}</p>
           <p><strong>Condition:</strong> {bike.condition}</p>
-          <p><strong>Price:</strong> ${bike.price}</p>
-          <p><strong>Seller:</strong> {bike.sellerName}</p>
-          <p><strong>Contact Info:</strong> {bike.sellerEmail}</p>
+          <p>${bike.price}</p>
         </div>
         </Link>
       </div>
