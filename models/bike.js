@@ -6,6 +6,7 @@ const Bike = new Schema(
     brand: { type: String, required: true },
     imgURL: { type: String, required: true },
     category: { type: String, required: true },
+    description: {type: String, required: true},
     condition: { type: String, required: true },
     price: { type: String, required: true },
     sellerName: { type: String, required: true },
