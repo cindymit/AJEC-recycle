@@ -75,7 +75,14 @@ const CreateBike = (props) => {
             <option value="Road">Road</option>
             <option value="Youth">Youth</option>
           </select>
-         
+          <input
+            className="input-description"
+            placeholder="Description"
+            value={bike.description}
+            name="description"
+            required
+            onChange={handleChange}
+          />
           <select
             name="condition"
             required
