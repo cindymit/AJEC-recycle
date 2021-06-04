@@ -154,4 +154,8 @@ input:focus {
   #condition {
     width: 308px;
   }
+
+  h1 {
+    font-size: 1.5em;
+  }
 }

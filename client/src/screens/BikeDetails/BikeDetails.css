@@ -68,20 +68,22 @@
   font-size: 20px;
 }
 
+.edit-delete {
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+}
+
 .edit-button {
   background-color: #8cc223;
   color: black;
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
-  margin: 10px 0px 10px 15px;
-  margin-right: 5px;
+  margin: 10px 0px 10px 15px;;
   cursor: pointer;
   font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
-  border: 2px solid grey;
-  width: 60px;
-  text-align: center;
   text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
 }
 
 .edit-button:hover {
@@ -92,11 +94,17 @@
   background-color: #8cc223;
   color: black;
   font-size: 20px;
-  padding: 10px 60px;
+  padding: 10px 45px;
   border-radius: 5px;
   margin: 10px 0px 10px 15px;;
   cursor: pointer;
   font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
+}
+
+.delete-button:hover {
+  color: white;
 }
 
 .brand {
@@ -151,7 +159,14 @@
     font-size: 2.5em;
   }
 
-  .edit-button {
-    margin-right: 5px;
+  .edit-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
   }
+
+  /* .edit-button {
+    margin-right: 5px;
+  } */
 }

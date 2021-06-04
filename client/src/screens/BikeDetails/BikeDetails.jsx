@@ -23,26 +23,27 @@ const BikeDetails = (props) => {
 
   const authenticatedOptions = (
     <div className="user-details">
-      <div className='sellerName-container'>
-      <label className='detail-label'>Seller Name</label>
-      <div className="sellerName">
-        {bike.sellerName}
+      <div className="sellerName-container">
+        <label className="detail-label">Seller Name</label>
+        <div className="sellerName">{bike.sellerName}</div>
       </div>
+      <div className="sellerEmail-container">
+        <label className="detail-label">Seller Email</label>
+        <div className="sellerEmail">{bike.sellerEmail}</div>
       </div>
-      <div className='sellerEmail-container'>
-      <label className='detail-label'>Seller Email</label>
-      <div className="sellerEmail">
-         {bike.sellerEmail}
+      <div className="edit-delete">
+        <Link className="edit-button" to={`/bikes/${bike._id}/edit`}>
+          Edit
+        </Link>
+        <Link to="/all-bikes">
+          <button
+            className="delete-button"
+            onClick={() => deleteBike(bike._id)}
+          >
+            Delete
+          </button>
+        </Link>
       </div>
-      </div>
-      <Link className="edit-button" to={`/bikes/${bike._id}/edit`}>
-        Edit
-      </Link>
-      <Link to="/all-bikes">
-        <button className="delete-button" onClick={() => deleteBike(bike._id)}>
-          Delete
-        </button>
-      </Link>
     </div>
   );
 
@@ -63,27 +64,21 @@ const BikeDetails = (props) => {
         <div className="detail">
           <div className="brand">{bike.brand}</div>
           <div className="price">{`$${bike.price}`}</div>
-          <div className='category-container'>
-            <div className='label-container'>
-          <label className='detail-label'>Category</label>
+          <div className="category-container">
+            <div className="label-container">
+              <label className="detail-label">Category</label>
             </div>
-          <div className="category">
-            {bike.category}
+            <div className="category">{bike.category}</div>
           </div>
-          </div>
-          <div className='condition-container'>
-            <div className='label-container'>
-<label className='detail-label'>Condition</label>
+          <div className="condition-container">
+            <div className="label-container">
+              <label className="detail-label">Condition</label>
             </div>
-          <div className="condition">
-            {bike.condition}
+            <div className="condition">{bike.condition}</div>
           </div>
-          </div>
-          <div className='description-container'>
-          <label className='description-label'>Description</label>
-          <div className="description">
-            {bike.description}
-          </div>
+          <div className="description-container">
+            <label className="description-label">Description</label>
+            <div className="description">{bike.description}</div>
           </div>
           <div className="button-container"></div>
           {!props.user ? null : authenticatedOptions}
