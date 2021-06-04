@@ -61,7 +61,7 @@ const BikeDetails = (props) => {
       <div className='brand'>{bike.brand}</div>
       <div className='price'>{`$${bike.price}`}</div>
       <div className='category'><strong>Category:</strong> {bike.category}</div>
-      <div className='description'><strong>Summary:</strong></div>
+      <div className='description'><strong>Summary:</strong>{bike.description}</div>
       <div className='condition'><strong>Condition:</strong> {bike.condition}</div>
       <div className='button-container'>
           </div>
