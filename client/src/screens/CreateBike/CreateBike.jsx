@@ -77,7 +77,7 @@ const CreateBike = (props) => {
           </select>
           <input
             className="input-description"
-            placeholder="Image URL"
+            placeholder="Description"
             value={bike.description}
             name="description"
             required
