@@ -67,7 +67,7 @@ const CreateBike = (props) => {
             onChange={handleChange}
           >
             <option disabled={bike.category} selected>
-              Pick One
+              Category
             </option>
             <option value="Comfort">Comfort</option>
             <option value="Hybrid">Hybrid</option>
@@ -75,14 +75,7 @@ const CreateBike = (props) => {
             <option value="Road">Road</option>
             <option value="Youth">Youth</option>
           </select>
-          <input
-            className="input-description"
-            placeholder="Image URL"
-            value={bike.description}
-            name="description"
-            required
-            onChange={handleChange}
-          />
+         
           <select
             name="condition"
             required
@@ -91,7 +84,7 @@ const CreateBike = (props) => {
             onChange={handleChange}
           >
             <option disabled={bike.condition} selected>
-              Pick One
+              Condition
             </option>
             <option value="New">New</option>
             <option value="Good">Good</option>
