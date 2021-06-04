@@ -9,7 +9,7 @@ const Home = (props) => {
       <div className="home-div">
         <div className="button-container">
           <img
-            src="https://i.imgur.com/uAgLqBC.jpg"
+            src="https://i.imgur.com/8ZMesbK.jpg"
             alt="bike"
             className="bike-image"
           />
