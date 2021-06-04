@@ -16,21 +16,17 @@ The purpose of this web application is to allow users the ability to resale and 
 
 ## Wireframes
 
-[Figma Wireframe](https://www.figma.com/file/kv2Un4Wg9qpxKTgswK992x/Re-CyCle?node-id=0%3A1)
-
 Homepage Screenshot
 
-<img src="https://i.imgur.com/xiFbaZL.png" alt="homepage-screenshot" />
+![Homepage Screenshot](https://i.imgur.com/xiFbaZL.png")
 
 Bike Details Screenshot
 
-<img src="https://i.imgur.com/pGzjTdl.png" alt="details-screenshot" />
+![Bike Details Screenshot](https://i.imgur.com/pGzjTdl.png")
 
 ## Component Hierarchy
 
-[Component Hierarchy](https://whimsical.com/ajec-recycle-XT2oHb6NT8eHkv8nPiaVPc)
-
-<img src="https://i.imgur.com/OgRAAxW.png" alt="component-hierachy" />
+![Component Hierarchy](https://i.imgur.com/OgRAAxW.png")
 
 ## Schema
 
