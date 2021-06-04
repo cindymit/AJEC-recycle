@@ -29,7 +29,7 @@ const AllBikes = (props) => {
       const allBikes = await getBikes();
       setBikes(allBikes);
       setSearchResult(allBikes);
-      console.log(allBikes);
+      
     };
     fetchBikes();
 

@@ -16,13 +16,19 @@
 
 .detail {
   text-align: center;
+  max-width: 500px;
+  margin: 20px;
 }
+
+
 
 .price {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    text-align: left;
+    font-weight: bold;
 }
 
 .category {
@@ -30,6 +36,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    padding-left: 4rem;
 }
 
 .condition {
@@ -37,6 +44,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    padding-left: 3.5rem;
 }
 
 .sellerName {
@@ -44,6 +52,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    padding-left: 2.4rem;
 }
 
 .sellerEmail {
@@ -51,6 +60,16 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    padding-left: 2.6rem;
+}
+
+.description{
+  text-align: left;
+  font-size: 20px;
+}
+
+.edit-delete {
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
 }
 
 .edit-button {
@@ -59,14 +78,12 @@
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
-  margin: 10px 0px;
-  margin-right: 5px;
+  margin: 10px 0px 10px 15px;;
   cursor: pointer;
   font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
-  border: 2px solid grey;
-  width: 60px;
-  text-align: center;
   text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
 }
 
 .edit-button:hover {
@@ -77,18 +94,57 @@
   background-color: #8cc223;
   color: black;
   font-size: 20px;
-  padding: 10px 60px;
+  padding: 10px 45px;
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 10px 0px 10px 15px;;
   cursor: pointer;
   font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
+}
+
+.delete-button:hover {
+  color: white;
 }
 
 .brand {
   font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 10px;
   font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.category-container,
+.condition-container,
+.sellerName-container,
+.sellerEmail-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.description-container {
+  margin: 10px 0px;
+}
+
+.detail-label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.description-label {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: #8cc233;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.category,
+.condition,
+.sellerEmail,
+.sellerName {
+  padding-left: 4rem;
 }
 
 @media screen and (max-width: 667px) {
@@ -103,7 +159,14 @@
     font-size: 2.5em;
   }
 
-  .edit-button {
-    margin-right: 5px;
+  .edit-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
   }
+
+  /* .edit-button {
+    margin-right: 5px;
+  } */
 }

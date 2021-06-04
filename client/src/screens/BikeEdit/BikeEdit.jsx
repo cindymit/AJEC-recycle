@@ -9,6 +9,7 @@ const BikeEdit = (props) => {
     brand: "",
     imgURL: "",
     category: "",
+    description: "",
     condition: "",
     price: "",
     sellerName: "",
@@ -94,7 +95,16 @@ const BikeEdit = (props) => {
             <option value="Road">Road</option>
             <option value="Youth">Youth</option>
           </select>
-
+          <textarea className="edit-description"
+            placeholder="description"
+            value={bike.description}
+            name="description"
+            required
+            onChange={handleChange}
+            rows="5"
+            cols="40"
+            >
+            </textarea>
           <select
             name="condition"
             required
