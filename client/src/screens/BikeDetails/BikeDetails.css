@@ -1,82 +1,89 @@
 .bikedetails-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: space-between;
-  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
   padding-top: 100px;
   margin-bottom: 90px;
 }
 
-.bike-detail {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
-
-.detail {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.price{
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.category{
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.condition{
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.sellerName{
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.sellerEmail{
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.bike-detail-image{
-  margin-left: 50px;
+.bike-detail-image {
   width: 500px;
   height: auto;
   border-bottom: none;
 }
 
+.detail {
+  text-align: center;
+  max-width: 500px;
+  margin: 20px;
+}
+
+
+
+.price {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+
+.category {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    padding-left: 4rem;
+}
+
+.condition {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    padding-left: 3.5rem;
+}
+
+.sellerName {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    padding-left: 2.4rem;
+}
+
+.sellerEmail {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    padding-left: 2.6rem;
+}
+
+.description{
+  text-align: left;
+  font-size: 20px;
+}
+
+.edit-delete {
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+}
+
 .edit-button {
-  background-color: #8CC223;
+  background-color: #8cc223;
   color: black;
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
-  margin: 10px 0px;
-  margin-right: 5px;
+  margin: 10px 0px 10px 15px;;
   cursor: pointer;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
-  border: 2px solid grey;
-  width: 60Px;
-  text-align: center;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
 }
 
 .edit-button:hover {
@@ -84,46 +91,82 @@
 }
 
 .delete-button {
-  background-color: #8CC223;
+  background-color: #8cc223;
   color: black;
   font-size: 20px;
-  padding: 10px 60px;
+  padding: 10px 45px;
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 10px 0px 10px 15px;;
   cursor: pointer;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
-} 
-
-.brand{
-  font-size: 45px;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .bikedetails-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    text-align: center;
-    margin-bottom: 100px;
-  }
+.delete-button:hover {
+  color: white;
+}
 
-  .detail {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-  }
+.brand {
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+}
 
-  .bike-detail {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-  }
+.category-container,
+.condition-container,
+.sellerName-container,
+.sellerEmail-container {
+  display: flex;
+  margin-top: 10px;
+}
 
+.description-container {
+  margin: 10px 0px;
+}
+
+.detail-label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.description-label {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: #8cc233;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.category,
+.condition,
+.sellerEmail,
+.sellerName {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 667px) {
   .bike-detail-image {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 275px;
     margin-left: 0px;
+    margin-bottom: 20px;
   }
 
-  .edit-button{
-    margin-right: 5px;
+  .brand {
+    font-size: 2.5em;
   }
+
+  .edit-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* .edit-button {
+    margin-right: 5px;
+  } */
 }

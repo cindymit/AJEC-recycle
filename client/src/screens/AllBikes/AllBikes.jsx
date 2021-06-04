@@ -8,7 +8,7 @@ import Filter from "../../components/Filter/Filter"
 import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 
 
-const AllBikes = () => {
+const AllBikes = (props) => {
   const [input, setInput] = useState("");
   const [bikes, setBikes] = useState([]);
   const [searchResult, setSearchResult] = useState([])
@@ -29,7 +29,7 @@ const AllBikes = () => {
       const allBikes = await getBikes();
       setBikes(allBikes);
       setSearchResult(allBikes);
-      console.log(allBikes);
+      
     };
     fetchBikes();
 
@@ -68,7 +68,7 @@ const AllBikes = () => {
 
   return (
     <div>
-      <Layout>
+      <Layout user={props.user}>
         <Search search={input} setSearch={searchBike} handleSubmit={handleSubmit} />
         <Filter handleSubmit={handleSubmit} handleFilter={handleFilter} />
         <Bikes bikes={searchResult} />

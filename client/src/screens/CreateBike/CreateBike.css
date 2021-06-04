@@ -6,7 +6,7 @@
   padding: 0px 0px 0px 0px;
   width: 500px;
   height: 600px;
-  background-color: #FCFBFB;
+  background-color: #fcfbfb;
   border-radius: 4px;
 }
 
@@ -14,116 +14,112 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
 }
 
 input:focus {
-  outline:none;
+  outline: none;
 }
 
 .input-brand {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-brand:hover {
-  border: 1px solid #70FE6C;
+  border: 1px solid #70fe6c;
 }
 
 .input-imgURL {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-imgURL:hover {
-  border: 1px solid #70FE6C;
+  border: 1px solid #70fe6c;
 }
 
 .input-category {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-category:hover {
-  border: 1px solid #70FE6C;
+  border: 1px solid #70fe6c;
+}
+
+#category,
+#condition {
+  width: 425px;
+  height: 50px;
+  border: 1px solid black;
+  color: rgb(106, 106, 106);
+  font-size: 20px;
+  margin: 5px;
 }
 
 .input-condition {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-condition:hover {
-  border: 1px solid #70FE6C;
+  border: 1px solid #70fe6c;
 }
 
 .input-price {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-price:hover {
-  border: 1px solid #70FE6C;
+  border: 1px solid #70fe6c;
 }
 
 .input-name {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-name:hover {
-  border: 1px solid #70FE6C;
+  border: 1px solid #70fe6c;
 }
 
 .input-email {
   margin: 5px;
   width: 400px;
   height: 25px;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  font-family: "GTA Expanded Black", Helvetica, Arial, sans-serif;
   font-size: 20px;
   border: 1px solid black;
 }
 
 .input-email:hover {
-  border: 1px solid #70FE6C;
-}
-
-.submit-button {
-  font-size: 20px;
-  border-radius: 4px;
-  border: 1px solid #000000;
-  color: black;
-  font-weight: bolder;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px 20px 10px 20px;
-  background-color:#70FE6C;
-  opacity: 0.9;
-  font-family: "GTA Expanded Black",Helvetica,Arial,sans-serif;
+  border: 1px solid #70fe6c;
 }
 
 .submit-button:hover {
@@ -132,5 +128,34 @@ input:focus {
   color: black;
   font-weight: bolder;
   transform: scale(1.1);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 550px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-div {
+    width: 360px;
+  }
+  .input-brand,
+  .input-imgURL,
+  .input-price,
+  .input-name,
+  .input-email {
+    width: 285px;
+  }
+
+  #category,
+  #condition {
+    width: 308px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
 }

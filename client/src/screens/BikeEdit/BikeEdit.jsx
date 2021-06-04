@@ -82,7 +82,7 @@ const BikeEdit = (props) => {
           <select
             name="category"
             required
-            id="category"
+            id="edit-category"
             value={bike.category}
             onChange={handleChange}
           >
@@ -95,18 +95,20 @@ const BikeEdit = (props) => {
             <option value="Road">Road</option>
             <option value="Youth">Youth</option>
           </select>
-          <input
-            className="edit-description"
-            placeholder="Image URL"
+          <textarea className="edit-description"
+            placeholder="description"
             value={bike.description}
             name="description"
             required
             onChange={handleChange}
-          />
+            rows="5"
+            cols="40"
+            >
+            </textarea>
           <select
             name="condition"
             required
-            id="condition"
+            id="edit-condition"
             value={bike.condition}
             onChange={handleChange}
           >

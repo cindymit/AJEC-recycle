@@ -9,7 +9,7 @@ const Home = (props) => {
       <div className="home-div">
         <div className="button-container">
           <img
-            src="https://www.rei.com/dam/content_team_071018_0071_htc_bike_hero_lg.jpg"
+            src="https://i.imgur.com/8ZMesbK.jpg"
             alt="bike"
             className="bike-image"
           />
@@ -45,20 +45,6 @@ const Home = (props) => {
             alt="ride"
           />
           </div>
-        </div>
-        <div className="home-icons">
-          {/* <img
-            src="https://img.icons8.com/wired/100/000000/get-cash.png"
-            alt="sell"
-          /> */}
-          {/* <img
-            src="https://img.icons8.com/wired/100/000000/buy.png"
-            alt="buy"
-          /> */}
-          {/* <img
-            src="https://img.icons8.com/wired/100/000000/bicycle.png"
-            alt="ride"
-          /> */}
         </div>
       </div>
     </Layout>

@@ -67,7 +67,7 @@ const CreateBike = (props) => {
             onChange={handleChange}
           >
             <option disabled={bike.category} selected>
-              Pick One
+              Category
             </option>
             <option value="Comfort">Comfort</option>
             <option value="Hybrid">Hybrid</option>
@@ -91,7 +91,7 @@ const CreateBike = (props) => {
             onChange={handleChange}
           >
             <option disabled={bike.condition} selected>
-              Pick One
+              Condition
             </option>
             <option value="New">New</option>
             <option value="Good">Good</option>
