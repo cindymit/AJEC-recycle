@@ -139,6 +139,7 @@ body {
   .hamburger {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0px;
 
   }
 
@@ -155,9 +156,10 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  background-color: white;
+  background-color: #f8f8f8;
   border: 1px solid black;
   top: 93px;
+  z-index: 1;
 }
 
   .welcome-link, .shop-link, .sell-link, .login-link, .signup-link, .login-out, .shop-container {
